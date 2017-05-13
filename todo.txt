@@ -1,0 +1,35 @@
+done: run on local server
+done: convert to static site
+TODO: create yandex login
+TODO: create github 
+TODO: clone github and upload
+TODO: face-neuron vector as logo
+TODO: Fonts
+TODO: additional content about technology
+TODO: register with google 
+
+done: Image specific to this project - neurons on dark background
+done: maximum width of centre elements if can do easily from js
+done: position of headings not all the way on right
+done: js to dnamically resize the front page height with page resize etc also resize #top and the down arrow
+done: load js
+done: Change color header on scroll
+done: change content text 
+done: links at top scroll the page to the right place
+done: transparent down arrow indicating scroll
+done: social media links + copyright at bottom
+done: limit the maximum width of text on the front page
+done: Icons header, about etc
+done: get rid of grey bar at very top
+done: Spacing of all boxes etc inc front page entire image
+done: Contact box
+done: Text color, format within blue/white blocks
+done: Text within blue / white blocks
+done: colored background images
+done: add blue/white block contents
+done: Transparent banner in middle with button
+done: Text content with what is there now
+
+Copy: http://tiffzhang.com/startup/?s=235014237567
+
+

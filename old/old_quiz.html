@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <h3>{{x}} diagnoses out of a total of {{y}} have been completed.</h3>
+    <form id="quiz-form" method="post" target="#">
+        <div class="form-group">
+            <label>Morphological description</label>
+            <textarea class="form-control" name="morphology" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Differential diagnosis</label>
+            <textarea class="form-control" name="diagnosis" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+
+{% endblock %}

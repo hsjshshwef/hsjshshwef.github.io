@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% from "macros.html" import search_box %}
+{% block content %}
+
+<div class="container">
+    {{ search_box(value) }}
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        {% for x in results %}
+        <div class="col-lg-11 col-centered">  
+            <a href="{{ x['url'] }}">{{ x['text'] }}</a>
+        </div>
+        {% endfor %}
+        {% if no_results %}
+            <h3>No results found for: <b>{{value}}</b></h3>
+        {% endif %}
+    </div> 
+</div>
+
+{% endblock %}

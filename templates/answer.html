@@ -1,0 +1,26 @@
+
+{% extends "main.html" %}
+{% block content %}
+
+    <h4>Your differential: {{answer}}</h4>
+    <h4>Correct answer: {{correct}}</h4>
+    <h4>{{x}} diagnoses out of a total of {{n}} have been completed.</h4>
+    <form id="quiz-form" method="get" target="#">
+        <input type="hidden" name="prev" value="{{image}}">
+        <div class="answer-buttons"> 
+        <button type="submit" name="submit" value="correct" class="btn btn-primary">Correct</button>
+        <button type="submit" name="submit" value="incorrect" class="btn btn-primary">Incorrect</button>
+        </div>
+        <div class="answer-buttons">
+        <button type="submit" name="submit" value="badphoto" class="btn btn-primary">Wrong image</button>
+        <button type="submit" name="submit" value="histology" class="btn btn-primary">Histology</button>
+        <button type="submit" name="submit" value="illustration" class="btn btn-primary">Illustration</button>
+        </div>
+    </form>
+    <div id="image-div">
+        <a href="{{context}}">
+        <img src="/img_content{{image}}?size=500">
+        </a>
+    </div>
+
+{% endblock %}

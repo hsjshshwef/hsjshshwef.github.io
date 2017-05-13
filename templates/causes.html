@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+{% block content %}
+{% from "image_grid.html" import grid %}
+
+<div class="container">
+    <div class="row">
+        <a name="top"></a>
+        <h2>{{title}} </h2>
+        <div class="col-md-4">
+            {% for column in columns[0] %}
+                <a href="#{{column[1]}}">{{column[0]}}</a><br>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% for column in columns[1] %}
+                <a href="#{{column[1]}}">{{column[0]}}</a><br>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% for column in columns[2] %}
+                <a href="#{{column[1]}}">{{column[0]}}</a><br>
+            {% endfor %}
+        </div>
+    </div> 
+    <div>
+        {% for diag in diags %}
+        <hr>
+        <div>
+            <a name="{{diag[1]}}"></a>
+            <h3>{{ diag[0]}}<a href="#top" class="top-link"> [top] </a></h3>
+            {% for line in diag[2] %}
+                <ul>
+                <li>{{line}}</li>
+                </ul>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

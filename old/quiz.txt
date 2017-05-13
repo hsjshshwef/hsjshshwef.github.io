@@ -1,0 +1,476 @@
+==Milia
+morphology:Multiple small yellow-white papules face
+diagnosis:Milia
+diagnosis:Syringoma
+diagnosis:Comedomes
+==Cylindromas
+morphology:Numerous skin coloured or pink tumours scalp or face
+diagnosis:Cylindromas
+==Viral exanthanem
+morphology:Numerous urticated inflammatory papules trunk and limbs
+diagnosis:Drug reaction
+diagnosis:Viral exanthanem
+diagnosis:Erythema multiforme
+diagnosis:DRESS syndrome
+==Steatocystoma multiplex
+morphology:Clusters of multiple small yellow-white or skin coloured subcutaneous nodules
+diagnosis:Steatocytoma multiplex
+diagnosis:Eruptive xanthomata
+diagnosis:Acne keloidalis
+diagnosis:Acne cysts
+diagnosis:Molluscum contagiosum
+==Myxoid cyst
+morphology:Small cystic nodule adjacent to proximal nail fold
+diagnosis:Myxoid cyst
+==Lepromatous leprosy
+morphology:Numerous small facial nodules
+morphology:Inflammatory plaques
+diagnosis:Leprosy
+diagnosis:Xeroderma pigmentosum
+==Calcinosis
+morphology:Subcutaneous nodules with chalky white erosions
+diagnosis:Calcinosis cutis
+diagnosis:Gouty tophi
+diagnosis:Eruptive xanthoma
+==Infectious mononucleosis
+==Dowling-Degos syndrome
+morphology:Reticulated flexural hyperpigmentation
+diagnosis:Dowling-Degos disease
+diagnosis:Galli-Galli disease
+==EBV
+==Tinea barbae
+morphology:Inflammatory, crusted papules and plaques face and neck
+diagnosis:Tinea barbae
+diagnosis:Lupus vulgaris
+diagnosis:DIscoid lupus erythematosis
+diagnosis:Sarcoidosis
+==Malignant melanoma
+diagnosis:Melanoma
+==Congenital candidiasis
+morphology:Neonatal pustular eruption
+morphology:Pustules in neonate
+morphology:Acral desquamation in neonate
+morphology:Flexural erythema in neonate
+diagnosis:Neonatal pustular melanosis
+==Erythropoietic porphyria
+morphology:Pigmented teeth in child
+morphology:Malformed teeth in child
+morphology:Facial erosions in child
+morphology:Facial multilation in child
+morphology:Cheek and nose papules in child
+morphology:Excessive wrinkling in child
+diagnosis:Xeroderma pigmentosa
+==Cellulitis
+morphology:Leg inflammation with necrosis
+morphology:Leg erythema
+diagnosis:Necrotizing fasciitis
+diagnosis:Cellulitis
+==Lentigo simplex
+morphology:Dark, well-defined naevus
+morphology:Dark naevus with arborizing border
+diagnosis:Atypical naevus
+==Mycosis fungoides
+morphology:Multiple large inflammatory plaques
+diagnosis:Mycosis fungoides
+diagnosis:Tinea corporis
+==Dissecting cellulitis
+morphology:Motheaten alopecia with inflammation and bogginess
+morphology:Numerous small discrete patches of alopecia
+diagnosis:Dissecting cellulitis
+diagnosis:Syphilis
+==Bowen's disease
+morphology:Discrete large scaly inflammatory plaque
+diagnosis:Tinea corporis
+diagnosis:Bowen's disease
+==Central centrifugal cicatricial alopecia
+morphology:Centrally located scarring alopecia in afrocarribean
+diagnosis:CCCA
+==Anaphylaxis
+morphology:Facial swelling
+morphology:Mouth swelling
+morphology:Eye swelling
+diagnosis:Angioedema
+==Toxic epidermal necrolysis
+morphology:Extensive areas of dusky necrosis and skin loss
+diagnosis:Toxic epidermal necrolysis
+diagnosis:Purpura fulminans
+==Vasculitic ulcer
+morphology:Dusky purpura lower limb with ulcerartion
+morphology:Dusky purpura lower limbs
+morphology:Multiple small necrotic ulcers lower legs
+diagnosis:Vasculitis
+==Herpangina
+morphology:Inflammatory white papules and vesicles palate in child
+diagnosis:Herpangina
+==Rothmund Thompson syndrome
+morphology:Facial poikiloderma child
+morphology:Reticulated erythema face child
+morphology:Reticulated erythema buttocks child
+morphology:Reticulated erythema hands child
+diagnosis:Rothmund-Thompson syndrome
+diagnosis:Xeroderma pigmentosa
+diagnosis:Lupus
+==Leukocytoclastic vasculitis
+morphology:Numerous lower leg purpura
+diagnosis:Vasculitis
+diagnosis:Henoch-Schoenlein purpura
+==Anagen effluvium
+morphology:Spare hair child
+morphology:Short hair child
+morphology:Sparse hair adult
+morphology:Diffuse alopecia
+diagnosis:Netherton's syndrome
+==Bullous sweet's syndrome
+morphology:Symmetrical scarring inflammatory plaques and nodules
+diagnosis:Discoid lupus
+diagnosis:Lupus erythematosis
+==Fiberglass dermatitis
+morphology:Scaling and dermatitis hands
+morphology:Fingertip dermatitis
+diagnosis:Allergic contact dermatitis
+==Lyme disease
+morphology:Annular erythema with central target
+diagnosis:Erythema migrans
+diagnosis:Erythema annulare centrifugum
+==Orf
+morphology:Purple-white inflammatory nodule hand or finger
+diagnosis:Herpetic whitlow
+diagnosis:Orf
+diagnosis:Abscess
+diagnosis:Fish tank granuloma
+diagnosis:Atypical infection
+diagnosis:Mycobacterial infection
+diagnosis:Fungal infection
+==Allergic contact dermatitis
+morphology:Eczematous patch with blisters
+morphology:Eczematous patch
+diagnosis:Allergic contact dermatitis
+==Fox-Fordyce disease
+morphology:Numerous small hyperpigmented or purple papules axillae
+diagnosis:Fox-Fordyce disease
+==Lamellar icthyosis
+morphology:Generalized icthyosis
+morphology:Generalized hyperkeratosis
+morphology:Generalized erythema in neonate
+morphology:Hyperkeratotic plates in neonate
+diagnosis:Lamellar icthyosis
+diagnosis:Harlequin syndrome
+==Contact sensitization
+==Perniosis
+morphology:Perniosis hands or feet
+morphology:Chilblains hands or feet
+morphology:Multiple erythematous lesions hands or feet
+morphology:Purple finger
+morphology:Purple toe
+morphology:Erythema distal fingers
+morphology:Erythema distal toes
+diagnosis:Chilblains
+diagnosis:Perniosis
+==Pressure blister
+morphology:Ulcer foot
+morphology:Blister foot
+morphology:Ulcer sacrum
+diagnosis:Pressure ulcer
+diagnosis:Neuropathic ulcer
+diagnosis:Diabetic ulcer
+==Fibrofolliculomas
+morphology:Numerous skin-coloured papules face
+diagnosis:Syringomas
+diagnosis:Milia
+==Syringomas
+morphology:Small skin-coloured papules malar region
+morphology:Small skin-coloured papules eyelids
+diagnosis:Milia
+diagnosis:Syringomas
+==Gouty tophi
+morphology:Large deforming nodules fingers
+morphology:Multiple large nodules fingers
+morphology:Eroded nodule containing yellow caeseous material
+morphology:Small yellow-white nodule helix of ear
+morphology:Bulky deformation of hands and feet
+diagnosis:Gouty tophi
+diagnosis:Rheumatoid nodules
+==Necrobiosis lipoidica
+morphology:Well defined red-white atrophic patch shins
+diagnosis:Necrobiosis lipoidica
+==Cat scratch disease
+morphology:Linear arrangement of erythematous papules
+==Drug-induced hyperpigmentation
+morphology:Diffuse grey facial hyperpigmentation
+diagnosis:Lichen planus pigmentosus
+diagnosis:Drug-induced hyperpigmentation
+diagnosis:Minocycline induced hyperpigmentation
+diagnosis:Ochronosis
+==Keloid
+morphology:Hypertrophic infiltrated plaque or nodule
+diagnosis:Keloid
+diagnosis:Sarcoidosis
+diagnosis:Hypertrophic scar
+==Lymphoma cutis
+morphology:Well defined rounded erythematous plaque face
+morphology:Clearly demarcated erythematous plaque face
+diagnosis:Jessner's lymphocytic infiltrate
+diagnosis:Granuloma faciale
+==X-linked reticulate pigmentary disorder
+morphology:Linear or whorled hyperpigmentation
+morphology:Blashkoid hyperpigmentation
+diagnosis:Incontinentia pigmentii
+==Cutaneous larva migrans
+morphology:Serpiginous erythematous rash
+diagnosis:Cutaneous larva migrans
+diagnosis:Larva currens
+==Anticoagulants
+==Pseudoporphyria
+morphology:Blisters, erosions and scarring dorsum of hands
+diagnosis:Porphyria cutanea tarda
+==Toxin-mediated urticaria
+morphology:Widespread urticarial eruption
+diagnosis:Acute urticaria
+==Cowpox
+morphology:Multiple well defined necrotic erythematous nodules
+diagnosis:Smallpox
+diagnosis:Cowpox
+==Aquagenic pruritus
+morphology:Multiple poorly-defined erythematous patches following immersion in water
+==Focal dermal hypoplasia
+morphology:Missing finger
+morphology:Clawed hand
+morphology:Malformed hand
+morphology:Tooth deformities
+morphology:Atrophic erythematous patches
+diagnosis:Congenital syphiliis
+==Elastosis perforans serpingosa
+morphology:Grouped annular cluster of erythematous papules
+diagnosis:Elastosis perforans serpingosa
+diagnosis:Granuloma annulare
+==Erythema marginatum
+morphology:Figurate erythema
+morphology:Concentric annular erythema
+morphology:Annular erythema
+diagnosis:Erythema gyratum repens
+diagnosis:Urticaria
+diagnosis:Tinea corporis
+diagnosis:Erythema annulare centrifugum
+diagnosis:Subacute cutaneous lupus erythematosus
+==Xeroderma pigmentosum
+morphology:Extensive facial freckling in child
+morphology:Facial tumours
+morphology:Facial deformity
+diagnosis:Xeroderma pigmentosum
+==Meningococcaemia
+morphology:Stellate necrosis and purpura
+morphology:Purpuric patches
+morphology:Peripheral ichaemia and necrosis
+diagnosis:Purpura fulminans
+diagnosis:Antiphospholipid syndrome
+diagnosis:Meningococcaemia
+==Pityriasis amiantacea
+morphology:Extensive yellow crusting and scaling scalp
+morphology:Florid scalp hyperkeratosis
+diagnosis:Pityriasis amiantacea
+diagnosis:Scalp psoriasis
+diagnosis:Seborrhoiec dermatitis
+==Embolism
+==Schwannoma
+morphology:Subcutaneous nodule
+diagnosis:Epidermoid cyst
+==Reticulate acropigmentation of Kitamura
+morphology:Reticular hyperpigmentation hands, feet, neck, face
+morphology:Reticular pigmentation
+diagnosis:Dowling-Degos disease
+diagnosis:Galli-Galli disease
+==Kaposi's sarcoma
+morphology:Numerous purple-red dermal plaques
+diagnosis:Kaposi's sarcoma
+diagnosis:Lupus vulgaris
+diagnosis:Discoid lupus
+diagnosis:Cutaneous B cell lymphoma
+==Neuropathic ulcer
+morphology:Deep punched out ulcer foot
+diagnosis:Neuropathic ulcer
+diagnosis:Diabetic ulcer
+diagnosis:Ischaemic ulcer
+==Anthrax
+morphology:Inflammatory ulcer with necrotic centre
+morphology:Multiple necrotic ulcer with rolled edge
+morphology:Necrotic ulcer hand, arm or face
+diagnosis:Atypical mycobacterial infection
+diagnosis:Deep fungal infection
+diagnosis:Cutaneous B cell lymphoma
+diagnosis:Sporotrichosis
+diagnosis:Antiphospholipid syndrome
+==Disseminated superficial actinic porokeratosis
+morphology:Numerous small annular erythematous patches with rim of scale
+morphology:Numerous small erythematous patches lower legs
+morphology:Scaly macules
+diagnosis:DSAP
+diagnosis:Pityriasis rosea
+==Fordyce spots
+morphology:Numerous small white papules penis, mouth, lips
+diagnosis:Fordyce spots
+diagnosis:Pearly penile papules
+diagnosis:Milia
+==Dermoid cyst
+morphology:Subcutaneous nodule upper outer orbital rim in child
+morphology:Subcutaneous nodule temple
+morphology:Subcutaneous nodule posterior auricular area
+morphology:Subcutaneous nodule orbital rim
+morphology:Subcutaneous nodule eye, nose or posterior auricular area
+diagnosis:Epidermoid cyst
+diagnosis:Pilar cyst
+==Brachoradial pruritus
+morphology:Excoriations and eczema antecubital fossa
+morphology:Excoriated nodules forearm
+diagnosis:Eczema
+diagnosis:Nodular prurigo
+diagnosis:Brachoradial pruritus
+==Condyloma acuminatam
+morphology:Papilliferous growths genitals, anus
+morphology:Warty lesions vulva, anus
+diagnosis:Genital warts
+diagnosis:Condyloma acuminata
+==Poikiloderma
+morphology:Erythema with hyperpigmentation neck, V of chest
+diagnosis:Poikiloderma of Civatte
+diagnosis:Allergic contact dermatitis
+diagnosis:Atopic dermatitis
+==Lichen simplex
+morphology:Lichenified plaque
+diagnosis:Lichen simplex chronicus
+diagnosis:Psoriasis
+==Tinea corporis
+morphology:Scaly annular lesion with raised border
+morphology:Multiple small annular lesions
+diagnosis:Granuloma annulare
+diagnosis:Tinea corporis
+==Peutz-Jegher syndrome
+morphology:Pigmented macules lips, face
+diagnosis:Peutz-Jegher syndrome
+==Multiple mucosal neuromas
+morphology:Multiple small nodules tongue
+diagnosis:Cowden's syndrome
+==Keratoderma
+morphology:Keratoderma feet, hands
+diagnosis:Keratoderma
+==Lymphomatoid papulosis
+morphology:Multiple small scaly papules and nodules
+diagnosis:Lymphomatoid papulosis
+diagnosis:Pityriasis lichenoides chronica
+==Hepatic impariment
+==Subcutaneous granuloma annulare
+morphology:Multiple small annular plaques
+morphology:Subcutaneous annular lesion
+morphology:Multiple small dermal papules
+diagnosis:Granuloma annulare
+==Sporotrichosis
+morphology:Erythematous nodules in sporotrichoid pattern
+diagnosis:Sporotrichosis
+diagnosis:Atypical mycobacteria infection
+diagnosis:Lymphangitis
+==Cherry haemangioma
+morphology:Pink-purple vascular plaque or nodule
+diagnosis:Haemangioma
+==Amelanocytic melanoma
+morphology:Erythematous plaque or nodule
+morphology:Erythematous plaque or nodule with some pigment
+diagnosis:Squamous cell carcinoma
+diagnosis:Basal cell carcinoma
+diagnosis:Amelanocytic melanoma
+==Penile intraepithelial neoplasia
+morphology:Eroded erythematous patch penile mucosa or shaft
+morphology:Small erythematous patch penile mucosa or shaft
+diagnosis:Penile intraepithelial neoplasia
+diagnosis:Zoon's balanitis
+diagnosis:Balanitis
+diagnosis:Lichen sclerosis
+==Verrucous naevus
+morphology:Linear lesion with hyperpigmented or erythematous papules
+morphology:Linear naevus
+morphology:Linear warty naevus
+diagnosis:Linear psoriasis
+diagnosis:Linear Darier's disease
+diagnosis:Verrucous naevus
+==Clear cell acanthoma
+morphology:Erythematous dermal nodule
+diagnosis:Spitz naevus
+diagnosis:Cutaneous B cell lymphoma
+==Rheumatic fever
+morphology:Annular erythema
+morphology:Maculopapular rash with annular erythema
+morphology:Maculopapular rash
+diagnosis:Subacute lupus erythematosus
+diagnosis:Tinea
+diagnosis:Granuloma annulare
+==Neurofibroma
+morphology:Numerous subcutaneous papules and nodules
+diagnosis:Neurofibromatosis
+==Parotitis
+morphology:Unilateral parotid swelling
+diagnosis:Parotitis
+diagnosis:Mumps
+==Gianotti Crosti syndrome
+morphology:Urticated papules face, trunk, limbs in child
+diagnosis:Gianotti-Crosti syndrome
+==Thrombocytopenia
+morphology:Purpuric rash
+diagnosis:Vasculitis
+diagnosis:Thrombocytopenia
+==Albinism
+morphology:Generalized hypopigmentation with fair hair and red or blue eyes
+diagnosis:Oculocutaneous alibinism
+diagnosis:Albinism
+==Coccidiomycosis
+morphology:Multiple scaly erythematous nodules face
+morphology:Multiple eroded nodules
+diagnosis:Coccoidomycosis
+diagnosis:Histoplasmosis
+diagnosis:Blastomycosis
+diagnosis:Penicillosis
+==Leishmaniasis
+morphology:Destructive ulcer face
+morphology:Multiple ulcers face, limbs
+morphology:Inflammatory ulcer
+morphology:Ulcers with sporotrichoid spread
+morphology:Multiple inflammatory papules face
+morphology:Inflammatory papules face
+diagnosis:Leishmaniasis
+diagnosis:Leprosy
+diagnosis:Atypical mycobacterial infection
+diagnosis:Fungal infection
+diagnosis:Sporotrichosis
+==Glomus tumour
+morphology:Pigmentation beneath finger nail
+morphology:Subungual pigmentation
+morphology:Subungual nodule
+morphology:Bluish subungual lesion
+morphology:Painful nail nodule
+morphology:Painful pigmented nodule beneath nail
+morphology:Nail dystrophy
+diagnosis:Subungual melanoma
+diagnosis:Myxoid cyst
+==Actinic lichen planus
+morphology:Hyperpigmented plaques face, scalp, hands
+morphology:Purplish plaques face, scalp, hands
+diagnosis:Lichen planus pigmentosus
+diagnosis:Discoid lupus erythematosus
+==Drug extravasation
+morphology:Inflammation and necrosis dorsum of hand, antecubital fossa
+morphology:Finger necrosis
+diagnosis:Drug extravasation
+diagnosis:Embolism
+diagnosis:Peripheral vascular disease
+==Vulval intraepithelial neoplasia
+morphology:White plaques vulva
+morphology:Vulva hyperpigmentation
+morphology:Vulval dystrophy, scarring
+diagnosis:Lichen sclerosus
+==Hand foot and mouth disease
+morphology:Erythematous papules mouth, hands and feet in child
+diagnosis:Hand foot and mouth disease
+diagnosis:Herpangina
+diagnosis:Coxsackie A6
+==Cushing's disease
+morphology:Obesity, double chin, round face
+diagnosis:Cushings syndrome
+diagnosis:Obesity
+==Dermatofibroma

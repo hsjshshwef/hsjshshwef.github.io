@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+{% block content %}
+{% from "image_grid.html" import grid %}
+
+<div class="container">
+    <div class="row">
+        <a name="top"></a>
+        <h2>{{title}} <span class="click-link">Note: Image search may contain inaccuracies</span></h2>
+        <div class="col-md-4">
+            {% for cause in causes[0] %}
+                <a href="#{{cause['Url']}}">{{cause['Diagnosis']}}</a><br>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% for cause in causes[1] %}
+                <a href="#{{cause['Url']}}">{{cause['Diagnosis']}}</a><br>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% for cause in causes[2] %}
+                <a href="#{{cause['Url']}}">{{cause['Diagnosis']}}</a><br>
+            {% endfor %}
+        </div>
+    </div> 
+    <div>
+        {% for cause in all_causes %}
+        <hr>
+        <div>
+            <h3><a name="{{cause['Url']}}"></a>{{ cause['Diagnosis']}}<a href="#top" class="top-link"> [top] </a></h3>
+            {{ grid(cause['Images']) }} 
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

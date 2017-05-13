@@ -1,0 +1,278 @@
+#done: page title
+#done: bootstrap
+#done: include the text
+#done: upload
+#done: get xdiagnosis.net working
+#done: metrics for views
+#l8tr: google analytics
+#done: Table for the diagnoses, causes and differentials
+#done: 2 columns on the home page
+#done: Deal with quotation marks
+#done: list the number of each cause
+#done: better search terms for google images
+#TODO: Arrow for jumping to google images 
+#TODO: section for each diagnosis
+#TODO: Incude photos from the web
+#TODO: work on the differentials by hand to optimize the content
+#TODO: add a new differential
+#L8tr: release the fuzzy text search tool github
+
+import flask
+from flask import Flask,request,render_template,send_file,session,send_from_directory,make_response
+from werkzeug.security import generate_password_hash, check_password_hash
+import dermdiag
+import os
+
+app = Flask(__name__)
+app.secret_key = 'PRzMGTysVCalsKJVyUYd'
+#base = '/media/sf_magnuslynch/Dropbox/Current Work/Programs/web/dermdiag/'
+base = os.path.dirname(os.path.realpath(__file__))+'/'
+
+
+
+def iter_logs():
+    import socket,re,datetime,time
+    logfile=None
+    if socket.gethostname()=='alpha':
+        #development
+        logfile=base+'tests/access.log'
+    else:
+        #production
+        logfile=base+'../logs/access.log'
+    r = re.compile('^(\S+) \S+ \S+ \[(.*?)\] "(.*).*?" \d+ \d+ "(.*?)" "(.*?)"')
+    
+    for line in open(logfile,'r'):
+        m = r.match(line)
+        if m is None: pass 
+        else: 
+            #for i in xrange(1,r.groups+1): print m.group(i)
+            ip=m.group(1)
+            date=m.group(2).split(' ')[0]
+            date=datetime.datetime(*time.strptime(date, "%d/%b/%Y:%H:%M:%S")[0:6])
+            v = m.group(3).split(' ')
+            if len(v)==3: verb,url,encoding = v 
+            else: continue 
+            agent = m.group(5)
+        yield ip,date,url,agent
+            
+def analyse_logs():
+    import datetime
+    txt = ''
+    unique=set()
+    unique_non_root=set()
+    visits=[] 
+    root=0
+    for ip,date,url,agent in iter_logs():
+        #Last 24 hours
+        if date < datetime.datetime.now()+datetime.timedelta(days=-1): continue
+        if agent.find('bot') != -1: continue
+        if url.find('.js') != -1 or url.find('.css') != -1 or url.find('.ico') != -1: continue
+        unique.add(ip)
+        if url=='/': root += 1
+        else: 
+            visits.append(url + '\t' + agent + '\t' + ip)
+            unique_non_root.add(ip)
+    
+    txt += 'UNIQUE NON ROOT 24h: ' + str(len(unique_non_root)) + '\n'
+    txt += 'UNIQUE 24h: ' + str(len(unique)) + '\n'
+    txt += 'Root 24h: ' + str(root) + '\n'
+    txt += '\n'.join(visits)
+    return txt
+
+@app.route('/')
+def index():
+    import random
+    #Display bulleted list of causes of x
+    causes = dermdiag.list_all_causes()
+
+    #Display a random selection of photos taken from a specifc category
+    images=[]
+    name = random.choice(causes)
+    a,b = dermdiag.get_causes(name[1])
+    print a
+    for cause in b: images.extend(cause['Images'])
+    images = random.sample(images,20)
+    return render_template('front.html',causes=causes,images=images)
+
+
+
+@app.route('/causes/<name>')
+def category_name(name):
+    capitalized,v = dermdiag.get_causes(name)
+    print v
+    return render_template('causes.html',category=capitalized,causes=v,title='Causes of '+capitalized)
+
+
+@app.route('/updateme')
+def update(): 
+    dermdiag.update()
+    return 'Updated.'
+
+@app.route('/analyse24h')
+def log_stats():
+    response = make_response(analyse_logs())
+    response.headers["Content-type"] = "text/plain"
+    return response 
+
+def get_diags():
+    filename=base+'data/quiz.txt'
+    all_diags = set(dermdiag.list_all_diags())
+    f=open(filename,'r')
+    previous=set()
+    for line in f: 
+        if line[:2]=='==': previous.add(line[2:].strip()) 
+    remaining = all_diags.difference(previous)
+    f.close()
+    return (list(all_diags),list(previous),list(remaining))
+
+"""
+@app.route('/random')
+def random_imgs():
+    assert False
+    import random
+    filename=base+'data/quiz.txt'
+    all_diags,previous,remaining = get_diags()
+    s = random.choice(remaining)
+    f=open(filename,'a')
+    f.write('=='+s+'\n')
+    url = "https://www.google.com/search?&tbm=isch&q="+s
+    f.close()
+    return flask.redirect(url, code=302)  
+"""
+
+@app.route('/quiz',methods=['GET','POST'])
+def quiz():
+    """
+    Display random image
+    Ask for differential diagnosis
+    Record whether the diagnosis is correct or incorrect
+    """
+    all_images = dermdiag.list_all_images()
+    if request.method == 'GET':
+        import random
+        if request.args.has_key('prev'):
+            #save the results of the previous image
+           print request.args['submit'] 
+        image = random.choice(list(all_images))
+        return render_template('quiz.html',image=image) 
+
+    elif request.method == 'POST':
+        image = request.form['image']
+        v = all_images[image]
+        return render_template('answer.html',image=image,n=len(all_images),x=0,answer=request.form['diagnosis'],correct=v) 
+
+    else: assert False
+
+
+
+def old_quiz():
+    assert False
+    data='morphology,diagnosis'.split(',')
+    f=open(base+'data/quiz.txt','a')
+    if request.method=='GET':
+        pass 
+    elif request.method=='POST':
+        for x in data:
+            s = request.form[x]
+            s = s.replace('\r','')
+            s = s.split('\n')
+            for line in s:
+                line=line.strip()
+                if len(line)>0: f.write(x+':'+line+'\n')
+            #f.write(request.form['diagnosis'])
+    else: assert False
+
+    all_diags,previous,remaining = get_diags()
+    return render_template('quiz.html',x=len(previous),y=len(all_diags))
+
+@app.route('/differentials/<name>')
+def diagnosis_name(name):
+    capitalized,diff = dermdiag.get_diffs(name)
+    return render_template('differentials.html',name=capitalized,diags=diff,title='Differential diagnosis of '+capitalized)
+
+
+
+@app.route('/js/<path:filename>')
+def send_js(filename):
+    return send_from_directory(base+'js', filename)
+
+
+@app.route('/img/<path:filename>')
+def send_img(filename):
+    """
+    Serve image that is part of design of website / bootstrap
+    TODO: better to server from s3 in the longer term
+    """
+    return send_from_directory(base+'img', filename)
+
+@app.route('/img_content/<path:path>')
+def send_img_content(path):
+    """
+    Serve content image
+    Load image, convert to jpg
+    Create a white square background then resize the image and paste onto the background
+    Send response without creating temp file: http://cuppster.com/2013/03/12/serving-images-with-mongodb-gridfs-and-flask/ 
+    """
+    import Image, cStringIO
+    
+    max_dim = 200 
+    if request.method=='GET': 
+        if request.args.has_key('size'):  
+            max_dim = max(min(int(request.args['size']),1000),10)
+            
+    #Load the image from file
+    #img = Image.open(dermdiag.data_directory+'images/'+path)
+    img = dermdiag.get_content_image(path)
+    img=img.convert('RGB') #need to do this or gif/png files do not work
+    
+    #Resize image
+    w,h=img.size
+    scale = float(max_dim) / float(max(w,h))
+    w *= scale; h *= scale
+    w = int(w); h = int(h)
+    method = Image.ANTIALIAS
+    if scale > 1.0: method = Image.BICUBIC 
+    img = img.resize((w,h),method)
+
+    #Add a square white background
+    background = Image.new('RGB', (max_dim,max_dim), (255, 255, 255))
+    offset = ((max_dim - w) / 2, (max_dim - h) / 2)
+    background.paste(img, offset)
+
+    #Send back to browser without creating temp file
+    img_io = cStringIO.StringIO()
+    background.save(img_io, 'JPEG', quality=70)
+    img_io.seek(0)
+    return send_file(img_io, mimetype='image/jpeg')
+
+@app.route('/css/<path:filename>')
+def send_css(filename):
+    return send_from_directory(base+'css', filename)
+
+@app.route('/fonts/<path:filename>')
+def send_fonts(filename):
+    return send_from_directory(base+'fonts', filename)
+
+@app.route('/test')
+def test():
+    search='acrodermatitis-continua-of-hallopeau'
+    image_files = dermdiag.get_images(search)
+    image_files = ['/img_content'+f for f in image_files]
+    return render_template('image_grid.html',images=image_files)
+    
+
+
+def run():
+    app.debug=True; 
+    app.run(host='0.0.0.0',use_evalex=False)
+
+def main():
+    run()
+    #analyse_logs()
+    #test()
+
+try:
+	if __name__=='__main__': main()
+except KeyboardInterrupt:
+	traceback.print_exc()
+	print 'Break!'

@@ -1,0 +1,100 @@
+.inner {
+  padding: 30px;
+}
+
+.masthead {
+    width: 100% !important;
+}
+
+.masthead-scrolled {
+    background: rgb(43,61,123);
+}
+
+.masthead-unscrolled {
+    background: transparent;
+}
+
+
+body {
+    padding-top: 0px !important; 
+}
+
+
+
+#banner {
+    background-color: rgba(0,0,0, 0.5);  
+}
+
+.white {
+    background: #ffffff;
+    color: black !important;
+}
+.blue {
+    background: rgb(0,11,73);
+}
+
+
+
+#about {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+
+
+
+#contact {
+    font-family: Allerta,Tahoma,Nobile,Helvetica,Lora;
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+#emailbox {
+    border-color: rgb(43, 61, 123) !important;
+    width: 50%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    border: 3px solid;
+}
+
+#emailbtn {
+    background-color: rgb(43, 61, 123);
+    color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+}
+
+#logo {
+    font-size: 30px;
+}
+
+#footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+#share-buttons {
+    list-style: none;
+}
+
+#share-buttons {
+}
+
+/* Following elements need to be repositioned by js on resize  height 803 on laptop*/
+
+.top {
+    height: 150px;
+}
+
+#firstpage {
+    height: 550px;
+}
+
+#down-arrow {
+    height: 200px;
+}
+
+.nav-wrapper {
+    width: 800px;
+}

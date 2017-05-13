@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+{% from "macros.html" import grid %}
+
+<div class="container">
+    <div>
+        <h1><a name="{{diag['Url']}}"></a>{{ diag['Diagnosis']}}</h1>
+        {{ grid(diag['Images']) }} 
+    </div>
+</div>
+
+{% endblock %}

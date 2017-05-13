@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <div id="image-div">
+        <img class="img-responsive" src="/img_content{{image}}?size=500">
+    </div>
+    <form id="quiz-form" method="post" target="#">
+        <div class="form-group">
+            <label>Differential diagnosis</label>
+            <input type="hidden" name="image" value="{{image}}"> 
+            <textarea class="form-control" name="diagnosis" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+{% endblock %}

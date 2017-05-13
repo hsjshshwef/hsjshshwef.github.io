@@ -1,0 +1,18 @@
+{% macro grid(images) -%}
+<!--http://fearlessflyer.com/create-a-responsive-photo-gallery-with-bootstrap-framework/-->
+<div class="container">
+    <ul class="grid-ul row">
+        {% for image in images %}
+        <!--<li class="grid-ul-li col-lg-2 col-md-2 col-sm-3 col-xs-4 col-md-1"> -->
+        <li class="grid-ul-li col-lg-2 col-md-6 col-sm-6 col-xs-6"> 
+            <div>
+            <a href="{{image['context']}}">
+            <img class="grid-ul-li-img" src="/img_content{{image['file']}}" ></a>
+            </div>
+            <div class="grid-link"><a href="{{image['context']}}">{{image['display']}}</a></div>
+        </li>
+        {% endfor %}
+    </ul> 
+</div>
+{%- endmacro %}
+
