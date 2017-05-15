@@ -10,10 +10,16 @@ function resize_stuff()
         $("div.about-text").width(w* 0.6);
     }
 
+    //Height of background image TODO: on resize
+    var hi = $("img.bg").height(); 
+    var hw = $(window).height(); 
+    $("img.bg").height(hw*2.0);
+    console.log($("img.bg").height());
 
 }
 
 $( document ).ready(function() {
+
 
     //Change heading when scrolling 
     $(window).scroll(function() {
