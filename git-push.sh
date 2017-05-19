@@ -1,3 +1,3 @@
 git add *
 git commit -a --allow-empty-message -m '' 
-sshpass -p ylcezckgfjtr git push origin master 
+sshpass -p jsMDssj76d%$djJ git push origin master 
