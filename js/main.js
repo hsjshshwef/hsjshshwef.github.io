@@ -19,7 +19,8 @@ function resize_stuff()
     }
 
     //Height of background image TODO: on resize
-    $("img.bg").height(h*1.1);
+    if(w>h) $("img.bg").height(h*1.0);
+    else $("img.bg").height(h*1.2);
     $("img.bg").width(w*1.2);
 
     //Banner
