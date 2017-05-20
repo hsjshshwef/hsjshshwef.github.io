@@ -15,7 +15,9 @@ function resize_stuff()
     var hw = $(window).height(); 
     var ww = $(window).width(); 
     $("img.bg").height(hw*1.1);
-    $("img.bg").width(ww*1.2);
+    //$("img.bg").width(ww*1.2);
+    $("img.bg").width(ww*1.4);
+    console.log(ww);
 
     //Banner
     $("#banner-text").width(ww*0.9);

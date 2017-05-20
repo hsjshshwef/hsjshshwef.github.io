@@ -1,7 +1,12 @@
+body {
+    min-width: 100%;
+    padding-top: 0px !important; 
+}
+
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1600px;
+  /*min-width: 1600px;*/
 	
   /* Set up proportionate scaling */
   width: 100%;
@@ -39,15 +44,16 @@ img.bg {
 }
 
 
-body {
-    padding-top: 0px !important; 
-}
 
 
 
 #banner {
     background-color: rgba(0,0,0, 0.5);  
 }
+
+#banner-text {
+}
+
 
 .white {
     background: #ffffff;
