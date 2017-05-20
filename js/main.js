@@ -1,6 +1,14 @@
 function resize_stuff()
 {
     const w = $(window).width();
+    const h = $(window).height();
+    $("div.firstpage").height(h * (550/800));
+    $("div.downarrow").height(h * (200/800));
+    //$("div.top").height(h * (150/800));
+    //How far down is the banner text
+    if(w>h) $("div.top").height(h * (150/800));
+    else $("div.top").height(h * (100/800));
+    
     if(w<800) {
         $("div.nav-wrapper").width(w);
         $("div.about-text").width(w*0.8);
@@ -47,11 +55,6 @@ $( document ).ready(function() {
 
     //Change element size on resize
     $(window).resize(function() {
-        const w = $(window).width();
-        const h = $(window).height();
-        $("div.firstpage").height(h * (550/800));
-        $("div.downarrow").height(h * (200/800));
-        $("div.top").height(h * (150/800));
         resize_stuff();
         //alert(w+' '+h);
     });
