@@ -149,4 +149,9 @@ img.bg {
     box-sizing: border-box;
     line-height: 1.42857143;
 }
-
+ 
+.about-box {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
