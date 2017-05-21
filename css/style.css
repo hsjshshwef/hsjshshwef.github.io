@@ -98,7 +98,8 @@ img.bg {
 #emailbtn {
     background-color: rgb(43, 61, 123);
     color: rgb(255, 255, 255);
-    margin-bottom: 2px;
+    /*margin-bottom: 2px;*/
+    margin-left: 10px;
 }
 
 #logo {
@@ -134,5 +135,18 @@ img.bg {
 
 .nav-wrapper {
     width: 800px;
+}
+
+.backgroundcircle {
+    width: 140px;
+    height: 140px;
+    color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    background-color: rgb(43, 61, 123);
+    box-sizing: border-box;
+    line-height: 1.42857143;
 }
 
