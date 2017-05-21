@@ -102,8 +102,12 @@ img.bg {
     margin-left: 10px;
 }
 
-#logo {
+.logo-txt {
     font-size: 30px;
+}
+
+.logo-img {
+    height: 70px;
 }
 
 #footer {
